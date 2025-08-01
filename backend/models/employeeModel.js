@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
   firstName: String,
@@ -8,4 +9,5 @@ const schema = new mongoose.Schema({
   designation: String,
 });
 
-module.exports = mongoose.model("Employee", schema);
+// module.exports = mongoose.model("Employee", schema);
+export default mongoose.model("Employee", schema);

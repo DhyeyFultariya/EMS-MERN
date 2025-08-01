@@ -1,5 +1,6 @@
-/* eslint-disable no-undef */
-const employeeModel = require("../models/employeeModel");
+
+// const employeeModel = require("../models/employeeModel");
+import employeeModel from "../models/employeeModel.js";
 
 const store = async (req, res) => {
   try {
@@ -79,4 +80,5 @@ const update = async (req, res) => {
   }
 };
 
-module.exports = { store, fetch_all, fetch_one, destroy, search, update };
+// module.exports = { store, fetch_all, fetch_one, destroy, search, update };
+export default { store, fetch_all, fetch_one, destroy, search, update };
