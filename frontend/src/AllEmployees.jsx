@@ -44,7 +44,7 @@ function AllEmployees() {
           <td>Delete</td>
         </tr>
         {result.map((row) => (
-          <tr>
+          <tr key={row._id}>
             <td>{row._id}</td>
             <td>{row.firstName}</td>
             <td>{row.lastName}</td>
