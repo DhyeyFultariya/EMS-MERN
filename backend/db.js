@@ -1,7 +1,12 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+import mongoose from "mongoose";
+
+import dotenv from "dotenv";
+dotenv.config();
 
 mongoose
-  .connect("mongodb://localhost:27017/emsMERN")
+  // eslint-disable-next-line no-undef
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Database Connected Successfully");
   })

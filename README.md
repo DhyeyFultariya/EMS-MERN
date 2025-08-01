@@ -26,6 +26,7 @@
     - Create a `.env` file with the following variables:
       ```
       PORT=5000
+      MONGO_URI=mongodb://localhost:27017/yourDatabaseName
       ```
     - Start the backend server
       ```bash
