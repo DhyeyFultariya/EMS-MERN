@@ -70,7 +70,7 @@ table {
     border-radius: 8px;
     overflow: hidden; /* Ensures rounded corners are applied */
 }
-.addemployee {
+.addemployee, .editemployee {
     width: 40%;
 }
 
