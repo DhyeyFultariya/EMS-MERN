@@ -33,79 +33,82 @@ function AddEmployee() {
 
   return (
     <>
-      <h2
-        align="center"
-        style={{ position: "relative", top: "30px", right: "50px" }}
-      >
-        Add New Employee
-      </h2>
+      <h2>Add New Employee</h2>
       <form onSubmit={submitHandler}>
-        <table align="center" cellPadding={10} cellSpacing={0}>
-          <tr>
-            <td>First Name</td>
-            <td>
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>last Name</td>
-            <td>
-              <input
-                type="text"
-                id="lname"
-                name="lname"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Email</td>
-            <td>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Contact</td>
-            <td>
-              <input
-                type="text"
-                id="contact"
-                name="contact"
-                value={contact}
-                onChange={(e) => setContact(e.target.value)}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Designation</td>
-            <td>
-              <input
-                type="text"
-                id="designation"
-                name="designation"
-                value={designation}
-                onChange={(e) => setDesignation(e.target.value)}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td colSpan={2} align="center">
-              <input type="submit" id="submit" name="submit" value="Submit" />
-            </td>
-          </tr>
+        <table className="addemployee">
+          <tbody>
+            <tr>
+              <td>First Name</td>
+              <td>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>last Name</td>
+              <td>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Contact</td>
+              <td>
+                <input
+                  type="tel"
+                  id="contact"
+                  name="contact"
+                  value={contact}
+                  onChange={(e) => setContact(e.target.value)}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Designation</td>
+              <td>
+                <input
+                  type="text"
+                  id="designation"
+                  name="designation"
+                  value={designation}
+                  onChange={(e) => setDesignation(e.target.value)}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colSpan={2}>
+                <input
+                  type="submit"
+                  id="submit"
+                  name="submit"
+                  className="action-button submit"
+                  value="Submit"
+                />
+              </td>
+            </tr>
+          </tbody>
         </table>
       </form>
     </>

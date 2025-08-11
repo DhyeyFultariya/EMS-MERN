@@ -56,7 +56,7 @@ function AllEmployees() {
 
   return (
     <>
-      <h2 align="center" style={{ position: "relative", top: "30px" }}>
+      <h2>
         All Employees
       </h2>
       <table border={1} align="center" cellPadding={10} cellSpacing={0}>
@@ -86,6 +86,7 @@ function AllEmployees() {
                 <input
                   type="button"
                   value="Edit"
+                  className="action-button edit"
                   onClick={() => handleAction("edit", row._id)}
                 />
               </td>
@@ -93,6 +94,7 @@ function AllEmployees() {
                 <input
                   type="button"
                   value="Delete"
+                  className="action-button delete"
                   onClick={() => handleAction("delete", row._id)}
                 />
               </td>
